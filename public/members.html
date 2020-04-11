@@ -5,7 +5,9 @@
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
@@ -19,15 +21,112 @@
     </div>
   </div>
 </nav>
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
+    <h1 class="display-4">Welcome John Doe</h1>
+    <p class="lead">Today's Market</p>
+  </div>
+</div>
+
+  <!--Search form-->
+  
+  <div class="col-12">
+    <div id="searchCityholder">
+      <div class="offset-1 col-10">
+          <div class="input-group mb-3">
+            <input id="cityInput" type="text" class="form-control" placeholder="Find Out Financial" aria-label="Recipient's username" aria-describedby="button-addon2" id="city">
+            <div class="input-group-append">
+              <button class="btn btn-warning btn-outline-secondary" type="button" id="targetYelp" onclick=searchCity()></i>Look Up</button>
+            </div>
+          </div>
+        </div> 
+     </div>
+    </div>
+
+    
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+     
+      <div class="offset-1 col-5">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title"> Total Assets </h3>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Today's Movement </h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Check statement</a>
+        </div>
       </div>
     </div>
-  </div>
+      
+
+  
+      <div class="col-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+ 
+       </ol>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <div  class='col-12'> <div class='card'> <div class='card-header'></div>
+           <div class='card-body'><h5 id='firstSpot'class='card-title'>Apple<span id='cityName'></span></h5> <ul class="list-group list-group-flush">
+             <li id="stockPrice" class='list-group-item'>Stock Price </li>
+             <img src="../public/assets/IMG_1637.jpg" width=col-3  class="img-fluid" alt="Responsive image">
+                   
+           </ul></div> </div></div>
+         </div>
+             <!--Day One-->
+ 
+         <div class="carousel-item">
+           <div  class='col-12'> <div class='card'> <div class='card-header'></div>
+           <div class='card-body'><h5 id='firstSpot'class='card-title'>Amazon<span id='cityNameOne'></span></h5> <ul class="list-group list-group-flush">
+            <li id="stockPrice" class='list-group-item'>Stock Price </li>
+            <img src="../public/assets/IMG_1638.jpg" width=col-3  class="img-fluid" alt="Responsive image">
+      
+           </ul></div> </div></div>
+         </div>
+             <!--Day two-->
+ 
+         <div class="carousel-item">
+           <div  class='col-12'> <div class='card'> <div class='card-header'></div>
+           <div class='card-body'><h5 id='firstSpot'class='card-title'>Microsoft<span id='cityNameTwo'></span></h5> <ul class="list-group list-group-flush">
+            <li id="stockPrice" class='list-group-item'>Stock Price </li>
+            <img src="../public/assets/IMG_1639.jpg" width=col-3  class="img-fluid" alt="Responsive image">
+     
+           </ul></div> </div></div>
+         </div>
+ 
+      
+ 
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>
+   </div>
+ </div>
+ 
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/members.js"></script>
 
 </body>
