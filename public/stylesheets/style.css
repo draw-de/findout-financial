@@ -2,3 +2,19 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+.jumbotron {
+  background-color:rgb(219, 243, 226);
+  color: rgb(14, 88, 7);
+  height: 230px;
+}
+
+body {
+	background-color:rgb(250, 245, 245);
+}
+
+
+#chartIcon {
+  color: rgb(207, 196, 174) ;
+  border-color: orange !important;
+}
