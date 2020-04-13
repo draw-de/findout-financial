@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a8a1530fb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
     <title>FO Financial</title>
   </head>
   <body>
@@ -115,15 +116,15 @@
                           <h5 class="text-muted font-weight-normal mt-0" title="Average Revenue">Purchase / Sells</h5>
                           <h3 class="text-nowrap">
                               <span class="mt-3 mb-3">Purhase Funds:  </span>
-                              <span class="mt-3 mb-3">$6,254</span>
+                              <span id="availFunds" class="mt-3 mb-3">$6,254</span>
                             </h3>
                             <p class="mb-0 text-muted">
                               <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
                               <span class="text-nowrap">Since last month</span>
                           </p><br>
                           <p class="mb-0 text-muted"></p>
-                              <button type="button" class="btn btn-success btn-lg">Purchased Stocks <i class="fas fa-chart-line"></i></i></button>
-                              <button type="button" class="btn btn-danger btn-lg">Stocks Sold <i class="fas fa-hand-holding-usd"></i></button>
+                              <button id="buyStocks" type="button" class="btn btn-success btn-lg">Purchased Stocks <i id="chartIcon" class="fas fa-chart-line"></i></i></button>
+                              <button id="sellStocks" type="button" class="btn btn-danger btn-lg">Stocks Sold <i class="fas fa-hand-holding-usd"></i></button>
                           </p>
                       </div> <!-- end card-body-->
                   </div> <!-- end card-->
