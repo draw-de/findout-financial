@@ -7,14 +7,51 @@ form.login {
   background-color:rgb(219, 243, 226);
   color: rgb(14, 88, 7);
   height: 230px;
+  font-family: 'Cinzel', serif; 
+  padding: 0px!important;
 }
 
 body {
-	background-color:rgb(250, 245, 245);
-}
+  background-color:rgb(250, 245, 245);
+  font-family: 'Asap Condensed', sans-serif;}
 
 
 #chartIcon {
   color: rgb(207, 196, 174) ;
   border-color: orange !important;
 }
+
+.display-4{
+  font-size: 40px;
+}
+
+.logo { 
+  text-align: left;
+}
+
+.addSellStocks{
+  text-align: center ;
+}
+
+#logo{
+  color: azure;
+}
+.container1{
+  background: rgba(255,255,255,0.7);
+  width: 100%;
+  padding: 40px;
+  padding-top: 80px;
+  padding-left: 15%;
+ 
+}
+
+#money {
+  background-image: url('../assets/Money.jpg');
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100%;
+  opacity: 1;
+  width: 100%;
+  margin-bottom: 50px;
+}
+ 

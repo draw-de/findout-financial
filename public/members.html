@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a8a1530fb0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Cinzel|Economica&display=swap" rel="stylesheet">
     <title>FO Financial</title>
   </head>
   <body>
       <!-- Nav Bar with Search -->
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Find Out financial</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="members.html"><img src="../public/assets/Logo.png" id="logo" center width=500px class="img-fluid" alt="Responsive image"></a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search Stocks" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -23,14 +24,19 @@
       </ul>
     </nav>
        <!-- JumboTron -->
-    <div class="jumbotron jumbotron-fluid">
-
-      <div class="container">
-        <img src="../public/assets/logo3.jpg" width=400px class="img-fluid" alt="Responsive image">
-        <h1 class="display-4">Welcome John Doe</h1>
+       
+    
+      <div id="money" >
+      <div class="container1">
+        <div class="logo">
+          <img src="../public/assets/Logo.png" id="logo" center width=500px class="img-fluid" alt="Responsive image">
+        </div>
+        <h1 id="welcomeName" class="display-4">Welcome John Doe</h1>
         <p class="lead">Today's Market</p>
+      
       </div>
-    </div>
+      </div>
+   
         <!-- info and graph -->
     <div class="container">
     <div class="row">
@@ -122,9 +128,11 @@
                               <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
                               <span class="text-nowrap">Since last month</span>
                           </p><br>
+                          <div class="addSellStocks">
                           <p class="mb-0 text-muted"></p>
-                              <button id="buyStocks" type="button" class="btn btn-success btn-lg">Purchased Stocks <i id="chartIcon" class="fas fa-chart-line"></i></i></button>
-                              <button id="sellStocks" type="button" class="btn btn-danger btn-lg">Stocks Sold <i class="fas fa-hand-holding-usd"></i></button>
+                              <button id="buyStocks" type="button" class="btn btn-success btn-lg">Purchase Stocks <i id="chartIcon" class="fas fa-chart-line"></i></i></button>
+                              <button id="sellStocks" type="button" class="btn btn-danger btn-lg">Sell Stocks<i class="fas fa-hand-holding-usd"></i></button>
+                            </div>
                           </p>
                       </div> <!-- end card-body-->
                   </div> <!-- end card-->
@@ -144,14 +152,14 @@
                       </a>
                       <div class="dropdown-menu dropdown-menu-right" style>
                           <!-- item-->
-                          <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                          <a href="javascript:void(0);" class="dropdown-item">Export Report  <i class="fas fa-file-download"></i></a>
                           <!-- item-->
-                          <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                          <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
                           <!-- item-->
                           <a href="javascript:void(0);" class="dropdown-item">Profit</a>
                       </div>
                   </div>
-                  <h4 class="header-title mb-3">Projections Vs Actuals</h4>
+                  <h4 class="header-title mb-3">Individualized Stocks</h4>
                 <!-- Carosuel with Data--------->
                   <div class="container">
                       <div class="col-12">
@@ -325,7 +333,7 @@
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
