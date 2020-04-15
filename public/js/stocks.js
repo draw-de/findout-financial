@@ -18,15 +18,15 @@ $(document).ready(function () {
     const timeIntervals = "5min";
     // For AJAX
     const url = `https://www.alphavantage.co/query?function=${option}&symbol=${symbol}&interval=${timeIntervals}&apikey=${apiKey}`;
-
+  
     $.ajax({
       url: url,
       method: "GET",
     }).then(function (obj) {
       const chart = new SimpleStockChart();
       chart.element = document.getElementById("chart");
-      chart.key = "Q4OESUB6H59YFL9Z";
-      chart.ticker = symbol;
+      chart.key = "IDVGEA9LHR3V88Y9";
+      chart.ticker = "AAPL";
       chart.style.width = "70%";
       chart.style.height = "520px";
       chart.draw();
