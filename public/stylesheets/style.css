@@ -55,3 +55,79 @@ body {
   margin-bottom: 50px;
 }
  
+#computer {
+  background-image: url('https://www.quoteinspector.com/media/investing/line-chart-candlesticks-wo.jpg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  opacity: 50;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+element.style {
+background-image: url('https://g.foolcdn.com/editorial/images/478537/digital-solutions.jpg');
+}
+
+.clean-block.clean-hero {
+  min-height: 680px;
+}
+
+.clean-block.clean-hero {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.clean-block {
+  padding-bottom: 100px;
+}
+
+.clean-block{
+  padding-bottom: 50px;
+}
+
+section {
+  justify-content: center;
+  display: block;
+}
+
+.clean-block.clean-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: currentColor;
+  z-index: 1;
+}
+
+.clean-block.clean-info {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+}
+
+.clean-block.dark {
+  background-color: #f6f6f6;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  font-size: 35px;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.navbar-brand.logo {
+  font-size: 30px;
+  font-family: 'Asap Condensed', sans-serif;
+
+}

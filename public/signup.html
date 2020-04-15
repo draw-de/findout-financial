@@ -1,49 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <title>Passport Authentication</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <head>
+    <title>Findout Financial Stocks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Cinzel|Economica&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <img src="../public/assets/Logo.png" id="logo" center width=500px class="img-fluid">
       </div>
-    </div>
+              <div class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li role="presentation" class="nav-item"><a class="nav-link active" href="login.html">Sign In</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link active" href="signup.html">Contact</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link active" href="signup.html">Sign Up</a></li>
+                  </ul>
+              </div>
+      </div>
   </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Sign Up Form</h2>
-        <form class="signup">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span> <span class="msg"></span>
-          </div>
-          <button type="submit" class="btn btn-default">Sign Up</button>
-        </form>
-        <br />
-        <p>Or log in <a href="/login">here</a></p>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/signup.js"></script>
-
-</body>
-
+  <main class="page landing-page">
+    <section class="clean-block clean-hero" style="background-image: url('https://g.foolcdn.com/editorial/images/478537/digital-solutions.jpg');color: rgba(34,255,0,0.43);"></section>
+    </section>
+    <section class="clean-block clean-info dark">
+        <div class="container">
+            <div class="block-heading"></div>
+        </div>
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Sign Up</h2>
+                </div>
+                <form>
+                    <div class="form-group"><label for="name">Name</label><input type="text" class="form-control item" id="name" /></div>
+                    <div class="form-group"><label for="password">Password</label><input type="password" class="form-control item" id="password" /></div>
+                    <div class="form-group"><label for="email">Email</label><input type="text" class="form-control item" id="email" /></div>
+                    <button class="btn btn-primary btn-block" type="button">Sign Up</button></form>
+            </div>
+        </section>
+    </section>
+    <section class="clean-block features"></section>
+</main>
+              <footer>
+                    <p>draw-de findout-financial © 2020 Copyright</p>
+              </footer> 
+</main>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
