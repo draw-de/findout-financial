@@ -131,3 +131,12 @@ footer {
   font-family: 'Asap Condensed', sans-serif;
 
 }
+
+#loginlogo {
+  background-image: url('../assets/line-chart.jpg');
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100%;
+  opacity: 1;
+  width: 100%;
+  margin-bottom: 50px;
