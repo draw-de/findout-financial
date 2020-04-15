@@ -131,3 +131,32 @@ footer {
   font-family: 'Asap Condensed', sans-serif;
 
 }
+
+
+
+#landing{
+  background-image: url('../assets/digital-solutions.jpg');
+  opacity: 100;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+    
+  }
+  .container2{
+    background: rgba(38, 99, 54, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 300px;
+    padding-top: 220px;
+    padding-left: 15%;
+  }
+
+  #holder{
+    background-color: rgb(237, 238, 237);
+    width: 40%;
+    height: 100%;
+    offset-position: 900;
+  }
+   
+  
