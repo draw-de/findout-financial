@@ -8,20 +8,42 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
     />
-    <link href="stylesheets/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://www.simplestockcharts.com/assets/src/simplestockchart.js"></script>
+    <script src="https://kit.fontawesome.com/a8a1530fb0.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Check console!</h1>
       <div class="symbolContainer">
-        <div class="searchSymbol">
-          <input type="text" id="symbolInput" />
-          <button type="button" id="getSymbol">Submit</button>
+        <div class="ui-widget">
+          <label for="symbols">Search for stock: </label>
+          <input id="symbols" />
+          <label for="options">Choose time series: </label>
+          <select id="options">
+            <option value="TIME_SERIES_INTRADAY">Interday</option>
+            <option value="TIME_SERIES_DAILY">Daily</option>
+            <option value="TIME_SERIES_DAILY_ADJUSTED">Daily Adjusted</option>
+            <option value="TIME_SERIES_WEEKLY">Weekly</option>
+            <option value="TIME_SERIES_WEEKLY_ADJUSTED">Weekly Adjusted</option>
+            <option value="TIME_SERIES_MONTHLY">Monthly</option>
+            <option value="TIME_SERIES_MONTHLY_ADJUSTED">Monthly Adjusted</option>
+          </select>
+          <button type="submit" id="submitSymbol">Submit</button>
         </div>
-        <div class="symbolMatches"></div>
+      </div>
+      <div class="stockInfo">
+        <div class="row">
+          <div class="col-12" id="stock"></div>
+          <div class="col-12"><div id="chart"></div></div>
+        </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js\stocks.js"></script>
   </body>
 </html>
