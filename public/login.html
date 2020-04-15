@@ -2,40 +2,48 @@
 <html lang="en">
 
 <head>
-  <title>FO Financial Login</title>
+  <title>FindOut Login</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Cinzel|Economica&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-    </div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container"><a class="navbar-brand logo" href="#"><strong>FindOut</strong> Financial</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <a class="nav-link active" href="signup.html">Home</a>
+                </ul>
+            </div>
   </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
-        <form class="login">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+  <main class="page landing-page">
+    <section class="clean-block clean-info dark">
+        <div class="container">
+            <div class="block-heading"></div>
+        </div>
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Sign Up</h2>
+                </div>
+                <form>
+                  <div class="form-group"><label for="name">Name</label><input type="text" class="form-control item" id="name" /></div>
+                  <div class="form-group"><label for="password">Password</label><input type="password" class="form-control item" id="password" /></div>
+                  <button class="btn btn-primary btn-block" type="button">Sign Up</button></form>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <a href="members.html" button type="submit" class="btn btn-default">Login</button></a>
-        </form>
-        <br />
-        <p>Or sign up <a href="/">here</a></p>
-      </div>
-    </div>
-  </div>
+        </section>
+    </section>
+    <section2 class="clean-block clean-hero" style="background-image: url('https://internationalbanker.com/wp-content/uploads/2017/12/Stock-Exchange.jpg');color: rgba(34,255,0,0.43);"></section2>
+    <section class="clean-block features"></section>
+</main>
+<footer>
+      <p>draw-de findout-financial © 2020 Copyright</p>
+</footer>  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
